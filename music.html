@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>放松一刻</title>
+<link href="css/music.css" rel="stylesheet" type="text/css" />
+	<link rel="icon" type="image/x-icon" href="images/logo.ico" />
+	<!--小图标-->
+</head>
+
+<body>
+<div class="nav">
+  <div class="nav_logo"><!--左边导航栏-->
+  <a href="index.html">学海无涯</a>
+  </div>
+
+<hr color="#ffffff">
+	
+  <div class="nav_wuxu">
+  <ul>
+  <li><a href="learn.html">学习资源</a></li>
+  <li><a href="life.html">名人名句</a></li>
+  <li class="current" id="box2"><a href="music.html">放松一刻</a></li>
+  <li><a href="images.html">美的瞬间</a></li>
+  <li><a href="https://chenadian.gitee.io">个人博客</a></li>	  
+  </ul>
+  </div>
+
+<hr color="#ffffff" style="margin: 7px 0px 7px 0px">
+	
+  <div class="contact"><!--联系-->
+	<div class="contact_mingpian"><!--名片-->
+我的名片
+    </div>
+    <!--分割线-->
+<div class="contact_text">
+网名：中二的浪子<br>
+特长：发呆还有宅<br>
+职业：终身学习者<br>
+</div>
+    <!--分割线-->
+    <div class="contact_images">
+    
+    <div class="contact_images_qq">
+    <a href="http://wpa.qq.com/msgrd?v=3&uin=2796210015&site=qq&menu=yes" target="_blank">
+	<img src="images/contact_QQ.png" width="40" height="40" alt="QQ">
+	</a>
+	</div>
+    
+	<div class="contact_images_e-mail">
+ 	<a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=chenadian@qq.com" target="_blank">
+    <img src="images/contact_e-mail.png" width="40" height="40" alt="邮箱"/>
+	</a>
+    </div>
+		
+		
+    <div class="contact_images_wechat">
+        <a href="erweima.html" target="_blank">
+        <img src="images/contact_wechat.png" width="40" height="40" alt="微信">
+        </a>
+     </div>
+ 
+    </div>
+
+ 	 </div>
+</div>
+
+	
+
+
+<!--音乐主页-->
+<div class="study" id="box1">
+	<div class="bar">
+	
+<div class="grid-music-container f-usn">
+    <div class="m-music-play-wrap">
+        <div class="u-cover"></div>
+        <div class="m-now-info">
+            <h1 class="u-music-title"><strong>标题</strong><small>歌手</small></h1>
+            <div class="m-now-controls">
+                <div class="u-control u-process">
+                    <span class="buffer-process"></span>
+                    <span class="current-process"></span>
+                </div>
+                <div class="u-control u-time">00:00/00:00</div>
+                <div class="u-control u-volume">
+                    <div class="volume-process" data-volume="0.50">
+                        <span class="volume-current"></span>
+                        <span class="volume-bar"></span>
+                        <span class="volume-event"></span>
+                    </div>
+                    <a class="volume-control"></a>
+                </div>
+            </div>
+            <div class="m-play-controls">
+                <a class="u-play-btn prev" title="上一曲"></a>
+                <a class="u-play-btn ctrl-play play" title="暂停"></a>
+                <a class="u-play-btn next" title="下一曲"></a>
+                <a class="u-play-btn mode mode-list current" title="列表循环"></a>
+                <a class="u-play-btn mode mode-random" title="随机播放"></a>
+                <a class="u-play-btn mode mode-single" title="单曲循环"></a>
+            </div>
+        </div>
+    </div>
+    <div class="f-cb">&nbsp;</div>
+    <div class="m-music-list-wrap"></div>
+</div>
+<script src="js/smusic.min.js"></script>
+<script>
+var musicList = [
+    {
+		title : 'Bloom of Youth(风华正茂)',
+		singer : 'Key Sounds Label',
+		cover  : 'images/Key Sounds Label - Bloom of Youth.jpg',
+		src    : 'mp3/Key Sounds Label - Bloom of Youth.mp3'
+	},
+	{
+		title : 'River Flows In You(你的心河)',
+		singer : 'Martin Ermen',
+		cover  : 'images/River Flows In You.jpg',
+		src    : 'mp3/River Flows In You.mp3'
+	},
+	{
+		title : 'IllusionaryDaytime(幻昼)',
+		singer : 'Shirfine',
+		cover  : 'images/huanzho.jpg',
+		src    : 'mp3/illusionarydaytime.mp3'
+	},	
+	{
+		title : 'いつも何度でも',
+		singer : '宗次郎',
+		cover  : 'images/wuliannan.jpg',
+		src    : 'mp3/いつも何度でも.mp3'
+	},
+	{
+		title : 'Summer(菊次郎的夏天)',
+		singer : '久石譲',
+		cover  : 'images/summer.jpg',
+		src    : 'mp3/summer.mp3'
+	}
+];
+new SMusic({
+	musicList:musicList
+});
+</script>	
+		
+	</div>
+</div>
+</body>
+</html>

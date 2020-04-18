@@ -1,0 +1,249 @@
+@charset "utf-8";
+html,body{
+	height:100%;
+	width: 100%;
+}
+
+body{
+	font-family: "times New Roman", "微软雅黑";
+	font-size:14px;
+	padding:0;
+	margin:0;
+	background:#bbded6;
+	width:100%;
+	height:100%;
+}
+.nav{
+	width:15%;
+	height:100%;
+	background:#8ac6d1;
+	box-shadow:0px 20px 20px #8ac6d1;
+	position:fixed;
+	float:left;
+	transition: all 0.5s ease-in-out;
+}
+
+.nav_logo {
+	width:100%;
+	height:24px;
+	font-size:24px;
+	margin:30px auto 30px auto;
+	line-height:24px;
+	transition: all 0.5s ease-in-out;
+	text-align: center;
+}
+
+.nav_logo a{
+	text-decoration:none;
+	font-size:24px;
+	font-weight:bolder;
+	color:#FFF;
+}
+
+.nav_wuxu{
+	width:100%;
+	height:250px;
+	margin:23% 0px 23% 0px;
+}
+
+.nav_wuxu ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+.nav_wuxu ul li{
+	width:100%;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+}
+
+.nav_wuxu ul li a{
+	text-decoration:none;
+	color:#FFF;
+	display:block;
+	font-size:18px;
+	transition: all 0.5s ease-in-out;
+}
+
+.nav_wuxu ul li a:hover{
+	color:#8ac6d1;
+	background:rgba(255,255,255,0.5);
+	transition:all 0.5s ease-in-out;
+	border-radius:10px;
+	font-size: 22px;
+	font-weight: bolder;
+}
+
+/*名片整体*/
+.contact{
+	width: 84%;
+	height: 170px;
+	background:rgba(255,255,255,0.3);
+	border-radius: 10px;
+	border: solid 2px #FFFFFF;
+	float: left;
+	margin: 10px 9% 0px 7%;
+}
+
+.contact_mingpian{
+	width:100%;
+	height:50px;
+	font-size:24px;
+	font-weight:bolder;
+	color:rgba(255,255,255,1);
+	text-align:center;
+	line-height:50px;
+}
+
+.contact_text{
+	width:130px;
+	height:50px;
+	text-align:center;
+	margin:0px auto 0px auto;
+	color:#FFFFFF;
+	transition:  transform 0.5s ease-in-out;
+}
+
+.contact_text:hover{
+	transform: scale(1.2);
+	transition: all 0.5s ease-in-out;
+}
+
+/*名片按钮*/
+.contact_images{
+	width:84%;
+	height:40px;
+	margin:15px auto 0px auto;
+}
+
+.contact_images_qq,.contact_images_wechat{
+	width:30%;
+	float:left;
+	margin:0px 0px 0px 0px;
+	transition: transform 0.5s ease-in-out;
+
+}
+
+.contact_images_e-mail{
+	width:30%;
+	float:left;
+	margin: 0px 5% 0px 5%;
+	transition: transform 0.5s ease-in-out;
+
+}
+
+.contact_images_qq:hover{
+	transform: scale(1.2);
+	transition: all 0.5s ease-in-out;
+}
+
+.contact_images_wechat:hover{
+	transform: scale(1.2);
+	transition: all 0.5s ease-in-out;
+}
+
+.contact_images_e-mail:hover{
+	transform: scale(1.2);
+	transition: all 0.5s ease-in-out;
+}
+
+
+/*旋转动画*/
+	@keyframes rotate{
+    0%{
+        transform: rotate(0);
+      }
+    50%{
+    	transform:rotate(360deg);
+    }
+    100%{
+         transform: rotate(0);
+    	}
+	}
+
+.contact_images img{
+    animation: rotate 10s linear infinite;  /*开始动画后无限循环，用来控制rotate*/
+	transition: all 1s ease-in-out;
+	transform: rotate(360deg);
+	cursor: pointer;/*鼠标变手指*/
+	margin: auto auto auto auto;
+	width:100%;
+	height:100%;
+}
+
+/*右边整体*/
+.life{
+	width:85%;
+	height: 100%;
+	background:#bbded6;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	float: right;
+}
+
+.life1{
+	margin: 20% auto 0px auto;
+	font-size: 55px;
+}
+
+.life2{
+	margin:0px auto 0 auto;
+	font-size: 45px;
+
+}
+
+.life1,.life2{
+	width:80%;
+	height:100px;
+	color: #FFFFFF;
+	font-weight: bolder;
+	text-align: center;
+	line-height: 100px;
+	font-family: "bilbo-swash-caps,幼圆";
+}
+
+@-webkit-keyframes fadeIn {
+0% {
+opacity: 0; /*初始状态 透明度为0*/
+}
+50% {
+opacity: 1; /*中间状态 透明度为1*/
+}
+100%{
+opacity: 0; /*结尾状态 透明度为0*/
+}
+}
+#box1
+{-webkit-animation-name: fadeIn; /*动画名称*/
+-webkit-animation-duration: 4s; /*动画持续时间*/	
+-webkit-animation-iteration-count: 1; /*动画次数*/
+-webkit-animation-delay: 0s; /*延迟时间*/
+}
+
+#box2
+{-webkit-animation-name: fadeIn; /*动画名称*/
+-webkit-animation-duration: 5s; /*动画持续时间*/
+-webkit-animation-iteration-count: 1; /*动画次数*/
+-webkit-animation-delay: 0s; /*延迟时间*/
+}
+
+@-webkit-keyframes nav {
+0% {
+opacity: 0; /*初始状态 透明度为0*/
+}
+50% {
+opacity: 1; /*中间状态 透明度为1*/
+}
+100%{
+opacity: 1; /*结尾状态 透明度为1*/
+}
+}
+#box3
+{-webkit-animation-name: nav; /*动画名称*/
+-webkit-animation-duration: 4s; /*动画持续时间*/
+-webkit-animation-iteration-count: 1; /*动画次数*/
+-webkit-animation-delay: 0s; /*延迟时间*/
+}
